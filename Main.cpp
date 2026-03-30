@@ -33,6 +33,7 @@ int main() {
 	PrintHeader(static_cast<ofstream&>(cout), DASH);
 
     do {
+
         // Menu Display
         cout << "\n1. SmallRandom.txt\n";
         cout << "2. Descend.txt\n";
@@ -76,7 +77,7 @@ int main() {
         case 5:
             // Empty File
             inputFile = "Empty.txt";
-            outputFile = "Out5Empty.txt";
+            outputFile = "Output5Empty.txt";
 			EmptyGenernator();
             break;
 
@@ -109,12 +110,12 @@ int main() {
             }
 
             // Counter for bubblesort
-			int bubbleComp = 0;                           // Reset comparison count for Bubble Sort
-			int bubbleSwap = 0;                           // Reset swap count for Bubble Sort
+            bubbleComp = 0;                           // Reset comparison count for Bubble Sort
+            bubbleSwap = 0;                           // Reset swap count for Bubble Sort
 
             // Counter for insertionsort
-			int insertComp = 0;                           // Reset comparison count for Insertion Sort
-			int insertSwap = 0;                           // Reset swap count for Insertion Sort
+            insertComp = 0;                           // Reset comparison count for Insertion Sort
+            insertSwap = 0;                           // Reset swap count for Insertion Sort
 
             //run the sorts
             BubbleSort(bubbleArr, size, bubbleComp, bubbleSwap);

@@ -7,8 +7,9 @@ void SmallNumbersGenernator()
 	int loopCount;                                               // Loop counter for the number of iterations
 	int randomNumber;                                            // Variable to hold the generated random number
 	int smallNumbersArr[5];                                      // Array to hold the 5 random numbers
-	
-	ofstream fout("SmallRandom.txt");                            // Open the file "SmallRandom.txt" for writing
+	ofstream fout;                                               // Declare an ofstream object to write to the file
+
+	fout.open("SmallRandom.txt");                                // Open the file "SmallRandom.txt" for writing
 
 	for (loopCount = 0; loopCount < 5; loopCount++) 
 	{
@@ -26,8 +27,9 @@ void DescendingGenernator()
 	int loopCountDec;                                            // Loop counter for the number of iterations
 	int randomNumberDec = 100;                                   // Variable to hold the generated random number
 	int descendingArr[25];                                       // Array to hold the 25 descending numbers
-	
-	ofstream fout("Descend.txt");                                // Open the file "Descend.txt" for writing
+	ofstream fout;                                               // Declare an ofstream object to write to the file
+
+	fout.open("Descend.txt");                                    // Open the file "Descend.txt" for writing
 
 	for (loopCountDec = 0; loopCountDec < 25; loopCountDec++) 
 	{
@@ -44,8 +46,10 @@ void AscendingGenernator()
 	int loopCountAsc;                                            // Loop counter for the number of iterations
 	int randomNumberAsc = 1;                                     // Variable to hold the generated random number
 	int ascendingArr[10];                                        // Array to hold the 10 ascending numbers
-	
-	ofstream fout("Ascend.txt");                                 // Open the file "Ascend.txt" for writing
+	ofstream fout;                                               // Declare an ofstream object to write to the file
+
+	fout.open("Ascend.txt");                                     // Open the file "Ascend.txt" for writing
+
 	for (loopCountAsc = 0; loopCountAsc < 10; loopCountAsc++) 
 	{
 		randomNumberAsc += ReturnRandomNumber(1, 10);            // Generate a random number and add it to the previous number to ensure ascending order
@@ -61,8 +65,10 @@ void LargeRandomGenernator()
 	int loopCountLarge;                                          // Loop counter for the number of iterations
 	int randomNumberLarge;                                       // Variable to hold the generated random number
 	int largeRandomArr[50];                                      // Array to hold the 50 random numbers
-	
-	ofstream fout("LargeRandom.txt");                            // Open the file "LargeRandom.txt" for writing
+	ofstream fout;                                               // Declare an ofstream object to write to the file
+
+	fout.open("LargeRandom.txt");                                // Open the file "LargeRandom.txt" for writing
+
 	for (loopCountLarge = 0; loopCountLarge < 50; loopCountLarge++) 
 	{
 		randomNumberLarge = ReturnRandomNumber(1, 100);          // Generate a random number between 1 and 100
