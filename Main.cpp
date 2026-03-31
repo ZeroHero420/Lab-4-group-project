@@ -128,6 +128,7 @@ int main()
             InsertionSort(insertionArr, size, insertComp, insertSwap);
 
             //output results
+            PrintHeader(fout, EQUAL);
             fout << "Input File: " << inputFile << "\n\n\n";
 
             // Output the result before bubble sort

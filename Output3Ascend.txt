@@ -1,19 +1,30 @@
+====================================================================================================
+                                      Broome Community College
+                                      Module 4 Lab - Sorting 
+                  Program Written by Group 5: Dom Balcom, Oscar Lan, Jacob Sansom
+====================================================================================================
 Input File: Ascend.txt
 
 
 BubbleSort Before: 
-9 16 18 27 37 40 48 58 64 69 
+4 12 22 28 33 37 39 42 46 50 
+
 BubbleSort After: 
-9 16 18 27 37 40 48 58 64 69 
+4 12 22 28 33 37 39 42 46 50 
+
 Comparisons: 45
+
 Swaps: 0
 
 
 InsertionSort Before: 
-9 16 18 27 37 40 48 58 64 69 
+4 12 22 28 33 37 39 42 46 50 
+
 Insertion Sort After: 
-9 16 18 27 37 40 48 58 64 69 
-Comparisons: 0
-Swaps:0
+4 12 22 28 33 37 39 42 46 50 
+
+Comparisons: 9
+
+Swaps: 0
 
  

@@ -1,19 +1,30 @@
+====================================================================================================
+                                      Broome Community College
+                                      Module 4 Lab - Sorting 
+                  Program Written by Group 5: Dom Balcom, Oscar Lan, Jacob Sansom
+====================================================================================================
 Input File: Empty.txt
 
 
 BubbleSort Before: 
 
+
 BubbleSort After: 
 
+
 Comparisons: 0
+
 Swaps: 0
 
 
 InsertionSort Before: 
 
+
 Insertion Sort After: 
 
+
 Comparisons: 0
-Swaps:0
+
+Swaps: 0
 
  

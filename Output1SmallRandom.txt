@@ -1,19 +1,30 @@
+====================================================================================================
+                                      Broome Community College
+                                      Module 4 Lab - Sorting 
+                  Program Written by Group 5: Dom Balcom, Oscar Lan, Jacob Sansom
+====================================================================================================
 Input File: SmallRandom.txt
 
 
 BubbleSort Before: 
-42 68 35 1 70 
+25 79 59 63 65 
+
 BubbleSort After: 
-1 35 42 68 70 
+25 59 63 65 79 
+
 Comparisons: 10
-Swaps: 5
+
+Swaps: 3
 
 
 InsertionSort Before: 
-42 68 35 1 70 
+25 79 59 63 65 
+
 Insertion Sort After: 
-1 35 42 68 70 
-Comparisons: 0
-Swaps:0
+25 59 63 65 79 
+
+Comparisons: 7
+
+Swaps: 3
 
  
