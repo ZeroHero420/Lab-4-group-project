@@ -16,5 +16,7 @@ void LargeRandomGenernator();
 // Empty Array Generator - generates an empty file
 void EmptyGenernator();
 
+void PrintArrayValues(ofstream& fout, int arr[], int size, string label);
+
 
 #endif FUNCTIONS_H

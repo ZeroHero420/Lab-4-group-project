@@ -137,6 +137,26 @@ void LargeRandomGenernator()
 	fout.close();                                               
 }
 
+void PrintArrayValues(ofstream& fout, int arr[], int size, string label) {
+	fout << label << endl;
+
+	for (int index = 0; index < size; index++) {
+		fout << arr[index] << " ";
+
+		// if there are 10 numbers in that row, do a newline
+		if ((index + 1) % 10 == 0) {
+			fout << endl;
+		}
+	}
+	// If the law row has fewer than 10 elements, insert a newline
+	if (size % 10 != 0) {
+		fout << endl;
+	}
+
+	fout << endl;
+}
+
+
 // Empty Array Generator - generates an empty file
 void EmptyGenernator()
 {

@@ -42,7 +42,7 @@ int main() {
     string inputFile;   
 
     // Variable to hold the name of the output file
-    string outputFile;                         
+    string outputFile;     
 
     // Code Report Memory Leak
     _CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
@@ -131,7 +131,7 @@ int main() {
             bubbleComp = 0;              // Reset comparison count for Bubble Sort
             bubbleSwap = 0;              // Reset swap count for Bubble Sort
 
-            // Counter for insertionsort
+            // Counter for insertion sort
             insertComp = 0;              // Reset comparison count for Insertion Sort
             insertSwap = 0;              // Reset swap count for Insertion Sort
 
@@ -142,12 +142,12 @@ int main() {
             //output results
             fout << "Input File: " << inputFile << "\n\n\n";
 
-            // Output the result beforbubble sort
+            // Output the result before bubble sort
             fout << "BubbleSort Before: \n";
             for (int index = 0; index < size; index++)
             {
                 // Rows of 10s
-                if (index % 10 == 0)
+                if (index != 0 && index % 10 == 0)
                 {
                     fout << "\n";
                 }
@@ -160,7 +160,7 @@ int main() {
             for (int index = 0; index < size; index++)
             {
                 // Rows of 10s
-                if (index % 10 == 0)
+                if (index != 0 && index % 10 == 0)
                 {
                     fout << "\n";
                 }
@@ -177,7 +177,7 @@ int main() {
             for (int index = 0; index < size; index++)
             {
                 // Rows of 10s
-                if (index % 10 == 0)
+                if (index != 0 && index % 10 == 0)
                 {
                     fout << "\n";
                 }
@@ -187,11 +187,11 @@ int main() {
 
             // Output the result after insertion sort
             fout << "\nInsertion Sort After: \n";
-            for (int index = 0; index << size; index++)
+            for (int index = 0; index < size; index++)
             {
 
                 // Rows of 10s
-                if (index % 10 == 0)
+                if (index != 0 && index % 10 == 0)
                 {
                     fout << "\n";
                 }
