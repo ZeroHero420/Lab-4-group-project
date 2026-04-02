@@ -1,6 +1,7 @@
 #include "Standard.h"
 #include "InsertionSort.h"
 
+// Insertion Sort function implementation
 void InsertionSort(int arr[], int size, int& comparisons, int& swaps) 
 {
     for (int currentIndex = 1; currentIndex < size; currentIndex++)

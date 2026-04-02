@@ -90,7 +90,8 @@ void AscendingGenernator()
 	for (loopCountAsc = 0; loopCountAsc < 10; loopCountAsc++)
 	{
 		// Generate a random number and add it to the previous number to ensure ascending order
-		randomNumberAsc += ReturnRandomNumber(1, 10);            
+		randomNumberAsc += ReturnRandomNumber(1, 10);     
+
 		// Store the generated ascending number in the array
 		ascendingArr[loopCountAsc] = randomNumberAsc;        
 

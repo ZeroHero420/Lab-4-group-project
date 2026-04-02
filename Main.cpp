@@ -97,8 +97,6 @@ int main()
 
             size = 0; // Reset size for each file
 
-            size = 0; // Reset size for each file
-
             ifstream fin(inputFile);
             ofstream fout(outputFile);
 
@@ -116,12 +114,12 @@ int main()
             }
 
             // Counter for bubblesort
-            bubbleComp = 0;                           // Reset comparison count for Bubble Sort
-            bubbleSwap = 0;                           // Reset swap count for Bubble Sort
+            bubbleComp = 0;                      // Reset comparison count for Bubble Sort
+            bubbleSwap = 0;                      // Reset swap count for Bubble Sort
 
             // Counter for insertion sort
-            insertComp = 0;              // Reset comparison count for Insertion Sort
-            insertSwap = 0;              // Reset swap count for Insertion Sort
+            insertComp = 0;                      // Reset comparison count for Insertion Sort
+            insertSwap = 0;                      // Reset swap count for Insertion Sort
 
             //run the sorts
             BubbleSort(bubbleArr, size, bubbleComp, bubbleSwap);
@@ -135,72 +133,77 @@ int main()
             fout << "BubbleSort Before: \n";
             for (int index = 0; index < size; index++)
             {
-                // Rows of 10s
+                // Make rows of 10s for better readability
                 if (index != 0 && index % 10 == 0)
                 {
                     fout << "\n";
                 }
 
-                // Output the result after bubble sort
-                fout << "\nBubbleSort After: \n";
-                for (int index = 0; index < size; index++)
-                {
-                    // Rows of 10s
-                    if (index != 0 && index % 10 == 0)
-                    {
-                        fout << "\n";
-                    }
-
-                    fout << bubbleArr[index] << " ";
-                }
-
-                // Output the number of comparisons and swaps for bubble sort
-                fout << "\nComparisons: " << bubbleComp;
-                fout << "\nSwaps: " << bubbleSwap << "\n\n\n";
-
-                // Output the result before insertion sort
-                fout << "InsertionSort Before: \n";
-                for (int index = 0; index < size; index++)
-                {
-                    // Rows of 10s
-                    if (index != 0 && index % 10 == 0)
-                    {
-                        fout << "\n";
-                    }
-
-                    fout << arr[index] << " ";
-                }
-
-                // Output the result after insertion sort
-                fout << "\nInsertion Sort After: \n";
-                for (int index = 0; index < size; index++)
-                {
-
-                    // Rows of 10s
-                    if (index != 0 && index % 10 == 0)
-                    {
-                        fout << "\n";
-                    }
-
-                    fout << insertionArr[index] << " ";
-                }
-
-                // Output the number of comparisons and swaps for insertion sort
-                fout << "\nComparisons: " << insertComp;
-                fout << "\nSwaps:" << insertSwap << "\n\n";
-
-
-                fout << " " << endl;
-
-                // Close the files
-                fin.close();
-                fout.close();
-
-                // Output success message
-                cout << inputFile << " Processing successfully completed!" << endl;
+                // Output the original array values for bubble sort
+                fout << arr[index] << " ";
             }
+            // Output the result after bubble sort
+            fout << "\nBubbleSort After: \n";
+            for (int index = 0; index < size; index++)
+            {
+                // Make rows of 10s for better readability
+                if (index != 0 && index % 10 == 0)
+                {
+                    fout << "\n";
+                }
+
+                // Output the sorted array values for bubble sort
+                fout << bubbleArr[index] << " ";
+            }
+
+            // Output the number of comparisons and swaps for bubble sort
+            fout << "\nComparisons: " << bubbleComp;
+            fout << "\nSwaps: " << bubbleSwap << "\n\n\n";
+
+            // Output the result before insertion sort
+            fout << "InsertionSort Before: \n";
+            for (int index = 0; index < size; index++)
+            {
+                // Make rows of 10s for better readability
+                if (index != 0 && index % 10 == 0)
+                {
+                    fout << "\n";
+                }
+
+                // Output the original array values for insertion sort
+                fout << arr[index] << " ";
+            }
+
+            // Output the result after insertion sort
+            fout << "\nInsertion Sort After: \n";
+            for (int index = 0; index < size; index++)
+            {
+
+                // Make rows of 10s for better readability
+                if (index != 0 && index % 10 == 0)
+                {
+                    fout << "\n";
+                }
+
+                // Output the sorted array values for insertion sort
+                fout << insertionArr[index] << " ";
+            }
+
+            // Output the number of comparisons and swaps for insertion sort
+            fout << "\nComparisons: " << insertComp;
+            fout << "\nSwaps:" << insertSwap << "\n\n";
+
+            // Add a space at the end of the file for better formatting
+            fout << " " << endl;
+
+            // Close the files
+            fin.close();
+            fout.close();
         }
+        // Output success message
+        cout << inputFile << " Processing successfully completed!" << endl;
     } while (choice != 6);
 
+	// Return Zero to indicate successful program termination
     return 0;
 }
