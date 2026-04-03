@@ -130,71 +130,25 @@ int main()
             fout << "Input File: " << inputFile << "\n\n\n";
 
             // Output the result before bubble sort
-            fout << "BubbleSort Before: \n";
-            for (int index = 0; index < size; index++)
-            {
-                // Make rows of 10s for better readability
-                if (index != 0 && index % 10 == 0)
-                {
-                    fout << "\n";
-                }
+            PrintArrayValues(fout, arr, size, "BubbleSort Before: \n");
 
-                // Output the original array values for bubble sort
-                fout << arr[index] << " ";
-            }
+
             // Output the result after bubble sort
-            fout << "\nBubbleSort After: \n";
-            for (int index = 0; index < size; index++)
-            {
-                // Make rows of 10s for better readability
-                if (index != 0 && index % 10 == 0)
-                {
-                    fout << "\n";
-                }
+            PrintArrayValues(fout, bubbleArr, size, "BubbleSort After:\n");
 
-                // Output the sorted array values for bubble sort
-                fout << bubbleArr[index] << " ";
-            }
-
-            // Output the number of comparisons and swaps for bubble sort
-            fout << "\nComparisons: " << bubbleComp;
-            fout << "\nSwaps: " << bubbleSwap << "\n\n\n";
+            // Output the metrics for bubble sort
+            fout << "Comparisons: " << bubbleComp << "\n";
+            fout << "Swaps: " << bubbleSwap << "\n\n";
 
             // Output the result before insertion sort
-            fout << "InsertionSort Before: \n";
-            for (int index = 0; index < size; index++)
-            {
-                // Make rows of 10s for better readability
-                if (index != 0 && index % 10 == 0)
-                {
-                    fout << "\n";
-                }
-
-                // Output the original array values for insertion sort
-                fout << arr[index] << " ";
-            }
+            PrintArrayValues(fout, arr, size, "InsertionSort Before:\n");
 
             // Output the result after insertion sort
-            fout << "\nInsertion Sort After: \n";
-            for (int index = 0; index < size; index++)
-            {
+            PrintArrayValues(fout, insertionArr, size, "InsertionSort After:\n");
 
-                // Make rows of 10s for better readability
-                if (index != 0 && index % 10 == 0)
-                {
-                    fout << "\n";
-                }
-
-                // Output the sorted array values for insertion sort
-                fout << insertionArr[index] << " ";
-            }
-
-            // Output the number of comparisons and swaps for insertion sort
-            fout << "\nComparisons: " << insertComp;
-            fout << "\nSwaps:" << insertSwap << "\n\n";
-
-            // Add a space at the end of the file for better formatting
-            fout << " " << endl;
+            // Output the metrics for insertion sort
+            fout << "Comparisons: " << insertComp << "\n";
+            fout << "Swaps: " << insertSwap << "\n\n";
 
             // Close the files
             fin.close();
