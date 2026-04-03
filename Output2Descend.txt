@@ -1,0 +1,54 @@
+====================================================================================================
+                                      Broome Community College
+                                      Module 4 Lab - Sorting 
+                  Program Written by Group 5: Dom Balcom, Oscar Lan, Jacob Sansom
+====================================================================================================
+Input File: Descend.txt
+
+
+BubbleSort Before: 
+
+         Col 1 Col 2 Col 3 Col 4 Col 5 Col 6 Col 7 Col 8 Col 9Col 10
+
+Row 1:     98    97    94    91    88    87    85    83    81    77
+
+Row 2:     75    71    67    64    60    59    55    54    51    49
+
+Row 3:     48    45    43    42    39
+
+BubbleSort After:
+
+         Col 1 Col 2 Col 3 Col 4 Col 5 Col 6 Col 7 Col 8 Col 9Col 10
+
+Row 1:     39    42    43    45    48    49    51    54    55    59
+
+Row 2:     60    64    67    71    75    77    81    83    85    87
+
+Row 3:     88    91    94    97    98
+
+Comparisons: 300
+Swaps: 300
+
+InsertionSort Before:
+
+         Col 1 Col 2 Col 3 Col 4 Col 5 Col 6 Col 7 Col 8 Col 9Col 10
+
+Row 1:     98    97    94    91    88    87    85    83    81    77
+
+Row 2:     75    71    67    64    60    59    55    54    51    49
+
+Row 3:     48    45    43    42    39
+
+InsertionSort After:
+
+         Col 1 Col 2 Col 3 Col 4 Col 5 Col 6 Col 7 Col 8 Col 9Col 10
+
+Row 1:     39    42    43    45    48    49    51    54    55    59
+
+Row 2:     60    64    67    71    75    77    81    83    85    87
+
+Row 3:     88    91    94    97    98
+
+Comparisons: 300
+Swaps: 24
+

@@ -97,6 +97,7 @@ int main()
 
             size = 0; // Reset size for each file
 
+			// Open the input file for reading and the output file for writing
             ifstream fin(inputFile);
             ofstream fout(outputFile);
 
@@ -131,7 +132,6 @@ int main()
 
             // Output the result before bubble sort
             PrintArrayValues(fout, arr, size, "BubbleSort Before: \n");
-
 
             // Output the result after bubble sort
             PrintArrayValues(fout, bubbleArr, size, "BubbleSort After:\n");

@@ -138,44 +138,6 @@ void LargeRandomGenernator()
 	fout.close();                                               
 }
 
-void PrintArrayValues(ofstream& fout, int arr[], int size, string label) {
-	fout << label << endl;
-
-	//Label the columns
-	fout << "        "; // space for row labels
-	for (int col = 1; col <= 10; col++) {
-		fout << setw(6) << ("Col" + to_string(col));
-	}
-	fout << endl;
-
-	int row = 1;
-
-
-
-	for (int index = 0; index < size; index++) {
-		// Start of a new row
-		if (index % 10 == 0) {
-			fout << "\nRow " << row << ": ";
-			row++;
-		}
-
-		fout << setw(6) << arr[index];
-
-
-		// if there are 10 numbers in that row, do a newline!
-		if ((index + 1) % 10 == 0) {
-			fout << endl;
-		}
-	}
-	// If the law row has fewer than 10 elements, insert a newline
-	if (size % 10 != 0) {
-		fout << endl;
-	}
-
-	fout << endl;
-}
-
-
 // Empty Array Generator - generates an empty file
 void EmptyGenernator()
 {
@@ -184,4 +146,55 @@ void EmptyGenernator()
 
 	// Close the file immediately, leaving it empty              
 	fout.close();                              
+}
+
+// Function to print array values in a formatted manner
+// This function will be used to print the original array and the sorted arrays in a formatted manner to the output files.
+void PrintArrayValues(ofstream& fout, int arr[], int size, string label) 
+{
+	// Print the label for the array (e.g., "Original Array", "Bubble Sort", etc.)
+	fout << label << endl;
+
+	//Label the columns
+	fout << "        "; // space for row labels
+
+	// Print column headers (Col(1), Col(2), ..., Col(10))
+	for (int col = 1; col <= 10; col++) 
+	{
+		fout << setw(6) << ("Col(" + to_string(col) + ") ");
+	}
+
+	// Newline after column headers
+	fout << endl;
+
+	// Counter for row numbers
+	int row = 1;
+	
+	// Loop through the array and print values in a formatted manner
+	for (int index = 0; index < size; index++) 
+	{
+		// Start of a new row
+		if (index % 10 == 0) 
+		{
+			fout << "\nRow " << row << ": ";
+			row++;
+		}
+
+		// Print the array value with a width of 6 for alignment
+		fout << setw(6) << arr[index];
+
+
+		// if there are 10 numbers in that row, do a newline!
+		if ((index + 1) % 10 == 0) 
+		{
+			fout << endl;
+		}
+	}
+	// If the law row has fewer than 10 elements, insert a newline
+	if (size % 10 != 0) 
+	{
+		fout << endl;
+	}
+
+	fout << endl;
 }
