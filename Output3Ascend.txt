@@ -13,7 +13,7 @@ BubbleSort After:
 9 16 18 27 37 40 48 58 64 69 
 
 Comparisons: 45
-
+ 
 Swaps: 0
 
 
