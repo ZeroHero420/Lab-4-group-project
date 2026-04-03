@@ -140,8 +140,26 @@ void LargeRandomGenernator()
 void PrintArrayValues(ofstream& fout, int arr[], int size, string label) {
 	fout << label << endl;
 
+	//Label the columns
+	fout << "        "; // space for row labels
+	for (int col = 1; col <= 10; col++) {
+		fout << setw(6) << ("Col" + to_string(col));
+	}
+	fout << endl;
+
+	int row = 1;
+
+
+
 	for (int index = 0; index < size; index++) {
-		fout << arr[index] << " ";
+		// Start of a new row
+		if (index % 10 == 0) {
+			fout << "\nRow " << row << ": ";
+			row++;
+		}
+
+		fout << setw(6) << arr[index];
+
 
 		// if there are 10 numbers in that row, do a newline
 		if ((index + 1) % 10 == 0) {
@@ -152,6 +170,7 @@ void PrintArrayValues(ofstream& fout, int arr[], int size, string label) {
 	if (size % 10 != 0) {
 		fout << endl;
 	}
+	fout << "=== I AM USING THE NEW FUNCTION ===" << endl;
 
 	fout << endl;
 }
