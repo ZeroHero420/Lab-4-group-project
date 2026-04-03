@@ -144,68 +144,25 @@ int main() {
             fout << "Input File: " << inputFile << "\n\n\n";
 
             // Output the result before bubble sort
-            fout << "BubbleSort Before: \n";
-            for (int index = 0; index < size; index++)
-            {
-                // Rows of 10s
-                if (index != 0 && index % 10 == 0)
-                {
-                    fout << "\n";
-                }
+            PrintArrayValues(fout, arr, size, "BubbleSort Before: \n");
 
-                fout << arr[index] << " ";
-            }
 
             // Output the result after bubble sort
-            fout << "\n\nBubbleSort After: \n";
-            for (int index = 0; index < size; index++)
-            {
-                // Rows of 10s
-                if (index != 0 && index % 10 == 0)
-                {
-                    fout << "\n";
-                }
+            PrintArrayValues(fout, bubbleArr, size, "BubbleSort After:\n");
 
-                fout << bubbleArr[index] << " ";
-            }
-
-            // Output the number of comparisons and swaps for bubble sort
-            fout << "\n\nComparisons: " << bubbleComp;
-            fout << "\n\nSwaps: " << bubbleSwap << "\n\n\n";
+            // Output the metrics for bubble sort
+            fout << "Comparisons: " << bubbleComp << "\n";
+            fout << "Swaps: " << bubbleSwap << "\n\n";
 
             // Output the result before insertion sort
-            fout << "InsertionSort Before: \n";
-            for (int index = 0; index < size; index++)
-            {
-                // Rows of 10s
-                if (index != 0 && index % 10 == 0)
-                {
-                    fout << "\n";
-                }
-
-                fout << arr[index] << " ";
-            }
+            PrintArrayValues(fout, arr, size, "InsertionSort Before:\n");
 
             // Output the result after insertion sort
-            fout << "\n\nInsertion Sort After: \n";
-            for (int index = 0; index < size; index++)
-            {
+            PrintArrayValues(fout, insertionArr, size, "InsertionSort After:\n");
 
-                // Rows of 10s
-                if (index != 0 && index % 10 == 0)
-                {
-                    fout << "\n";
-                }
-
-                fout << insertionArr[index] << " ";
-            }
-
-            // Output the number of comparisons and swaps for insertion sort
-            fout << "\n\nComparisons: " << insertComp;
-            fout << "\n\nSwaps: " << insertSwap << "\n\n";
-
-
-            fout << " " << endl;
+            // Output the metrics for insertion sort
+            fout << "Comparisons: " << insertComp << "\n";
+            fout << "Swaps: " << insertSwap << "\n\n";
 
             // Close the files
             fin.close();

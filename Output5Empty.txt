@@ -8,23 +8,23 @@ Input File: Empty.txt
 
 BubbleSort Before: 
 
+          Col1  Col2  Col3  Col4  Col5  Col6  Col7  Col8  Col9 Col10
 
-BubbleSort After: 
+BubbleSort After:
 
-
-Comparisons: 0
-
-Swaps: 0
-
-
-InsertionSort Before: 
-
-
-Insertion Sort After: 
-
+          Col1  Col2  Col3  Col4  Col5  Col6  Col7  Col8  Col9 Col10
 
 Comparisons: 0
-
 Swaps: 0
 
- 
+InsertionSort Before:
+
+          Col1  Col2  Col3  Col4  Col5  Col6  Col7  Col8  Col9 Col10
+
+InsertionSort After:
+
+          Col1  Col2  Col3  Col4  Col5  Col6  Col7  Col8  Col9 Col10
+
+Comparisons: 0
+Swaps: 0
+

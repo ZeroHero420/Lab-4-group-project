@@ -170,7 +170,6 @@ void PrintArrayValues(ofstream& fout, int arr[], int size, string label) {
 	if (size % 10 != 0) {
 		fout << endl;
 	}
-	fout << "=== I AM USING THE NEW FUNCTION ===" << endl;
 
 	fout << endl;
 }
